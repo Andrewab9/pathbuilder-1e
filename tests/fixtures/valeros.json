@@ -1,0 +1,153 @@
+{
+  "version": 1,
+  "id": "fixture-valeros",
+  "name": "Valeros",
+  "player": "Test",
+  "alignment": "ng",
+  "deity": "Cayden Cailean",
+  "gender": "M",
+  "age": "28",
+  "height": "1,85 m",
+  "weight": "90 kg",
+  "homeland": "Andoran",
+  "languages": "Comune, Nanico",
+  "notes": "Personaggio di prova per i test automatici.",
+  "created": 1791714884568,
+  "updated": 1791714884568,
+  "settings": {
+    "abilityMethod": "pointbuy",
+    "pointBuy": 20,
+    "hpMethod": "avg",
+    "backgroundSkills": false,
+    "books": [],
+    "excludeCategories": []
+  },
+  "baseAbilities": {
+    "str": 15,
+    "dex": 14,
+    "con": 14,
+    "int": 10,
+    "wis": 12,
+    "cha": 8
+  },
+  "raceId": "human",
+  "raceAbilityChoice": "str",
+  "alternateTraits": [],
+  "favoredClasses": [
+    "fighter"
+  ],
+  "levels": [
+    {
+      "classId": "fighter",
+      "fcb": "hp"
+    },
+    {
+      "classId": "fighter",
+      "fcb": "hp"
+    },
+    {
+      "classId": "fighter",
+      "fcb": "hp"
+    },
+    {
+      "classId": "fighter",
+      "fcb": "hp",
+      "ability": "str"
+    },
+    {
+      "classId": "fighter",
+      "fcb": "hp"
+    }
+  ],
+  "archetypes": {
+    "fighter": [
+      "sOBYYpiNGfCyTIaE"
+    ]
+  },
+  "skills": {
+    "clm": 5,
+    "int": 5,
+    "swm": 3,
+    "per": 2
+  },
+  "skillSpecialties": {},
+  "feats": [
+    {
+      "uid": "f1",
+      "featId": "power-attack",
+      "slot": "lvl1"
+    },
+    {
+      "uid": "f2",
+      "featId": "cleave",
+      "slot": "lvl3"
+    },
+    {
+      "uid": "f3",
+      "featId": "weapon-focus",
+      "slot": "class:fighter:bonusFeat:1",
+      "detail": "greatsword"
+    },
+    {
+      "uid": "f4",
+      "featId": "toughness",
+      "slot": "race0"
+    },
+    {
+      "uid": "f5",
+      "featId": "iron-will",
+      "slot": "lvl5"
+    },
+    {
+      "uid": "f6",
+      "featId": "weapon-specialization",
+      "slot": "class:fighter:bonusFeat:4",
+      "detail": "greatsword"
+    },
+    {
+      "uid": "f7",
+      "featId": "furious-focus",
+      "slot": "class:fighter:bonusFeat:2"
+    }
+  ],
+  "extraFeatSlots": [],
+  "choices": [],
+  "traits": [
+    "basic-combat-reactionary",
+    "basic-combat-armor-expert"
+  ],
+  "extraFeatures": [],
+  "spells": {},
+  "prestigeCasting": {},
+  "equipment": [
+    {
+      "uid": "e1",
+      "kind": "weapon",
+      "refId": "oyUApQSVsAqzyjdz",
+      "name": "Greatsword",
+      "qty": 1,
+      "equipped": true,
+      "enhancement": 1,
+      "masterwork": true,
+      "price": 2350,
+      "weight": 8
+    },
+    {
+      "uid": "e2",
+      "kind": "armor",
+      "refId": "h65qEp22nsyRoeRa",
+      "name": "Full Plate",
+      "qty": 1,
+      "equipped": true,
+      "price": 1500,
+      "weight": 50
+    }
+  ],
+  "money": {
+    "pp": 0,
+    "gp": 120,
+    "sp": 5,
+    "cp": 0
+  },
+  "customBonuses": []
+}

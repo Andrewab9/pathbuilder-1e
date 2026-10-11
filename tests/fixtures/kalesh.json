@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "id": "fixture-kalesh",
+  "name": "Kalesh",
+  "player": "Test",
+  "alignment": "ng",
+  "deity": "",
+  "gender": "M",
+  "age": "28",
+  "height": "1,85 m",
+  "weight": "90 kg",
+  "homeland": "Andoran",
+  "languages": "Comune, Nanico",
+  "notes": "Cineta di prova.",
+  "created": 1791714884568,
+  "updated": 1791714884568,
+  "settings": {
+    "abilityMethod": "pointbuy",
+    "pointBuy": 20,
+    "hpMethod": "avg",
+    "backgroundSkills": false,
+    "books": [],
+    "excludeCategories": []
+  },
+  "baseAbilities": {
+    "str": 10,
+    "dex": 16,
+    "con": 16,
+    "int": 10,
+    "wis": 10,
+    "cha": 10
+  },
+  "raceId": "human",
+  "raceAbilityChoice": "con",
+  "alternateTraits": [],
+  "favoredClasses": [
+    "kineticist"
+  ],
+  "levels": [
+    {
+      "classId": "kineticist",
+      "fcb": "hp"
+    },
+    {
+      "classId": "kineticist",
+      "fcb": "hp"
+    },
+    {
+      "classId": "kineticist",
+      "fcb": "hp"
+    },
+    {
+      "classId": "kineticist",
+      "fcb": "hp",
+      "ability": "con"
+    },
+    {
+      "classId": "kineticist",
+      "fcb": "hp"
+    },
+    {
+      "classId": "kineticist",
+      "fcb": "hp"
+    },
+    {
+      "classId": "kineticist",
+      "fcb": "hp"
+    }
+  ],
+  "archetypes": {},
+  "skills": {
+    "per": 7,
+    "ste": 7,
+    "acr": 7
+  },
+  "skillSpecialties": {},
+  "feats": [],
+  "extraFeatSlots": [],
+  "choices": [],
+  "traits": [],
+  "extraFeatures": [],
+  "spells": {},
+  "prestigeCasting": {},
+  "equipment": [],
+  "money": {
+    "pp": 0,
+    "gp": 120,
+    "sp": 5,
+    "cp": 0
+  },
+  "customBonuses": [],
+  "kineticist": {
+    "primary": "fire",
+    "blasts": [],
+    "expanded7": "earth",
+    "talents": {
+      "inf-1": "kinetic-blade",
+      "inf-3": "burning-infusion",
+      "inf-5": "extended-range",
+      "util-2": "heat-adaptation",
+      "util-4": "searing-flame",
+      "util-6": "fire-s-fury"
+    },
+    "burn": 3,
+    "overflow": [
+      "dex",
+      "con",
+      "str"
+    ]
+  },
+  "pools": {}
+}

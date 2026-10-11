@@ -1,0 +1,80 @@
+{
+  "name": "pathbuilder-1e",
+  "version": "1.0.0",
+  "main": "./out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "data:build": "node tools/build-data.mjs && node tools/build-extra.mjs",
+    "dist": "electron-vite build && electron-builder --win"
+  },
+  "author": "Andrea Bonomo",
+  "license": "MIT",
+  "description": "Character builder per Pathfinder 1e",
+  "dependencies": {
+    "@tanstack/react-virtual": "^3.14.14",
+    "lucide-react": "^1.55.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "cheerio": "^1.2.0",
+    "electron": "^44.7.0",
+    "electron-builder": "^26.15.3",
+    "electron-vite": "^5.0.0",
+    "js-yaml": "^5.4.3",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vite": "^7.3.7",
+    "vitest": "^3.2.7"
+  },
+  "productName": "Pathbuilder 1e",
+  "build": {
+    "appId": "it.pathbuilder1e.app",
+    "productName": "Pathbuilder 1e",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "out/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "Pathbuilder 1e"
+    },
+    "portable": {
+      "artifactName": "Pathbuilder1e-portable-${version}.exe"
+    }
+  }
+}
